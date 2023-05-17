@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>spring-cloud-gcp-sql-postgres</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>spring-cloud-gcp-sql-postgres</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
