@@ -4,6 +4,7 @@
 #CMD ["catalina.sh", "run"]
 
 
-FROM anapsix/alpine-java
+FROM adoptopenjdk/openjdk11:alpine-jre
 COPY target/spring-cloud-gcp-sql-postgres-0.0.1-SNAPSHOT.jar /home/spring-cloud-gcp-sql-postgres-0.0.1-SNAPSHOT.jar
-CMD ["java","-jar","/home/spring-cloud-gcp-sql-postgres-0.0.1-SNAPSHOT.jar"]
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","/home/spring-cloud-gcp-sql-postgres-0.0.1-SNAPSHOT.jar"]
